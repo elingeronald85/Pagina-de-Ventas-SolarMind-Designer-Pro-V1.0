@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarMind Designer Pro | Software de Dimensionamiento FV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        solarDark: '#0f172a', 
+                        solarPanel: '#1e293b', 
+                        solarSun: '#f59e0b', 
+                        solarSunHover: '#d97706',
+                        solarEco: '#10b981', 
+                        solarLight: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-solarLight text-gray-800 antialiased">
+
+    <nav class="bg-solarDark text-white py-4 px-6 fixed top-0 w-full z-50 shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="image_e7e8aa.png" alt="Logo SolarMind" class="h-10 w-auto">
+                <span class="text-xl md:text-2xl font-extrabold tracking-tight">SolarMind <span class="text-solarSun font-light">Designer Pro</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold tracking-wide text-gray-300">
+                <a href="#demo" class="hover:text-solarSun transition">Video Demo</a>
+                <a href="#funciones" class="hover:text-solarSun transition">Funciones</a>
+                <a href="#reportes" class="hover:text-solarSun transition">Reporte Técnico</a>
+                <a href="#pwa" class="hover:text-white transition">App PWA</a>
+                <a href="#faq" class="hover:text-white transition">FAQ</a>
+            </div>
+            <a href="#precios" class="bg-solarSun text-white font-bold px-6 py-2 rounded shadow hover:bg-solarSunHover transition">Prueba 7 Días</a>
+        </div>
+    </nav>
+
+    <header class="bg-solarDark pt-32 pb-20 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <span class="text-solarSun font-bold uppercase tracking-widest text-sm mb-4">El Software SaaS para Instaladores FV</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter mb-6 max-w-4xl">
+                Dimensiona, Cotiza y Cierra <br><span class="text-solarEco">Proyectos Solares</span> al Instante.
+            </h1>
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl font-light">
+                SolarMind Designer Pro elimina el caos de las hojas de Excel. Genera reportes técnicos premium y administra tus instalaciones fotovoltaicas desde cualquier dispositivo.
+            </p>
+            <div class="flex gap-4 mb-16">
+                <a href="#precios" class="bg-solarSun text-white font-bold text-lg px-8 py-4 rounded shadow-lg hover:bg-solarSunHover transition hover:-translate-y-1">
+                    Comenzar Prueba Gratis
+                </a>
+            </div>
+            
+            <div class="w-full max-w-5xl relative z-10">
+                <img src="DashBoard Solar Mind Designer Pro.png" alt="Dashboard SolarMind Designer Pro" class="w-full h-auto rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-gray-700">
+            </div>
+        </div>
+    </header>
+
+    <section id="demo" class="py-24 px-6 bg-solarPanel border-y border-gray-800">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-solarSun font-bold uppercase tracking-widest text-sm mb-4 block">Demostración en Pantalla</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Mira el Software en Acción
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+                Descubre el flujo de trabajo completo: desde la captura de datos en campo hasta la generación del reporte técnico profesional.
+            </p>
+
+            <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-gray-700">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/QeDkYCVi-G0" 
+                    title="SolarMind Designer Pro Demo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="funciones" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-solarDark">Deja de perder ventas por cálculos poco profesionales</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-solarLight p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-solarDark">Adiós al Excel manual</h3>
+                    <p class="text-gray-600 leading-relaxed">Pasar horas en la oficina cuadrando fórmulas de paneles e inversores es cosa del pasado. Automatiza tu ingeniería.</p>
+                </div>
+                <div class="bg-solarLight p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-solarSun/20 text-solarSun rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-solarDark">Cotizaciones Ágiles</h3>
+                    <p class="text-gray-600 leading-relaxed">Crea el perfil del cliente, calcula el consumo y dimensiona el sistema completo directamente en la primera visita técnica.</p>
+                </div>
+                <div class="bg-solarLight p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-solarEco/20 text-solarEco rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-solarDark">Todo en la Nube</h3>
+                    <p class="text-gray-600 leading-relaxed">Tu base de datos de equipos, clientes y proyectos siempre segura y disponible en cualquier lugar y dispositivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reportes" class="py-24 px-6 bg-solarPanel text-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-solarSun font-bold uppercase tracking-widest text-sm">Cierre de Ventas</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                    El Informe Técnico que tus clientes amarán pagar.
+                </h2>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                    Un documento PDF generado automáticamente con el cálculo de generación, análisis financiero, gráfica de ROI, catálogo de equipos seleccionados y tu logotipo empresarial.
+                </p>
+                <ul class="space-y-4 pt-4 text-gray-300">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Diseño corporativo y profesional.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Envío directo por WhatsApp o Email.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Aumenta drásticamente tu tasa de aprobación.</li>
+                </ul>
+            </div>
+            <div class="p-4 bg-white/5 rounded-2xl border border-white/10">
+                <img src="Informe Tecnico SolardMind Designer Pro.png" alt="Informe Técnico Detallado SolarMind" class="w-full h-auto rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="pwa" class="py-24 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            
+            <div class="flex justify-center items-center">
+                <div class="relative mx-auto border-gray-800 bg-gray-800 border-[8px] rounded-[3rem] shadow-2xl w-full max-w-[300px]">
+                    <div class="rounded-[2.5rem] overflow-hidden bg-white">
+                        <img src="PAW SolarMind Designer Pro.jpeg" alt="Interfaz Móvil PWA" class="w-full h-auto object-cover object-top">
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6 mt-12 md:mt-0">
+                <span class="text-solarSun font-bold uppercase tracking-widest text-sm">Tecnología PWA</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-solarDark leading-tight">
+                    Tu oficina de ingeniería en tu bolsillo.
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    SolarMind Designer Pro está optimizado para funcionar como una App en tu celular (PWA). Haz el levantamiento técnico en el techo de tu cliente, ingresa el consumo y genera el dimensionamiento en sitio. Sin descargar aplicaciones pesadas.
+                </p>
+                <a href="#precios" class="inline-block mt-4 text-solarSun font-bold hover:text-solarSunHover transition">Ver planes y precios &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-solarLight border-t border-gray-200">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-solarDark">Instaladores FV que ya escalaron su negocio</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="text-solarSun mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-gray-600 italic mb-6">"SolarMind Designer Pro eliminó el caos de Excel. Pasamos de un 30% a un 65% de aprobación gracias a los reportes PDF. Los clientes ven la ingeniería y confían automáticamente."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-solarDark">Ing. Carlos Pérez</h4>
+                        <p class="text-sm text-gray-500">CEO - SolarTech Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="text-solarSun mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-gray-600 italic mb-6">"La versión PWA en el celular es increíble. Mis ingenieros dimensionan todo en tiempo real en la visita. Cotizamos los kits en segundos frente al cliente."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Diego" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-solarDark">Ing. Diego Ramírez</h4>
+                        <p class="text-sm text-gray-500">Instalador FV PRO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="text-solarSun mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-gray-600 italic mb-6">"El historial es invaluable. Vemos qué dimensionamiento hicimos hace meses y hacemos seguimiento a tiempo. SolarMind Designer Pro se pagó solo en la primera semana."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Marta" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-solarDark">Marta Gómez</h4>
+                        <p class="text-sm text-gray-500">Gerente Operativa FV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="py-24 px-6 bg-solarDark text-white">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Elige tu Plan de Ingeniería</h2>
+            <p class="text-xl text-gray-400">Ambos planes incluyen 7 días de prueba 100% gratis.</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-solarPanel p-10 rounded-3xl border border-gray-700 flex flex-col">
+                <h3 class="text-2xl font-bold mb-2">Suscripción PRO</h3>
+                <p class="text-gray-400 mb-6">Mensual</p>
+                <div class="text-5xl font-extrabold mb-8">$19.90<span class="text-base font-normal text-gray-400">/mes</span></div>
+                <ul class="space-y-4 mb-10 flex-grow text-gray-300">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Dimensionamientos Ilimitados</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Reportes PDF con Logo</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Acceso Móvil (PWA)</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Base de Datos Privada</li>
+                </ul>
+                <a href="https://pay.hotmart.com/P105115648O?off=bk7i6jq6" target="_blank" class="block w-full text-center bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 rounded-xl transition">Probar 7 Días Gratis</a>
+            </div>
+
+            <div class="bg-white text-solarDark p-10 rounded-3xl border-4 border-solarSun flex flex-col transform md:-translate-y-4 shadow-2xl relative">
+                <div class="absolute -top-5 right-10 bg-solarSun text-white font-bold px-4 py-1 rounded-full text-sm">2 MESES GRATIS</div>
+                <h3 class="text-2xl font-bold mb-2">Suscripción PRO Anual</h3>
+                <p class="text-gray-500 mb-6">Ahorras $39.80</p>
+                <div class="text-5xl font-extrabold mb-8">$199.00<span class="text-base font-normal text-gray-500">/año</span></div>
+                <ul class="space-y-4 mb-10 flex-grow text-gray-700 font-medium">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-star text-solarSun"></i> TODO lo del plan mensual</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Equivale a $16.58 /mes</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Módulo de Facturación</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-solarEco"></i> Congelas precio de por vida</li>
+                </ul>
+                <a href="https://pay.hotmart.com/P105115648O?off=h0pr4k2r" target="_blank" class="block w-full text-center bg-solarSun hover:bg-solarSunHover text-white font-bold py-4 rounded-xl transition shadow-lg text-lg">Probar 7 Días Anual</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 px-6 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-solarDark">Preguntas Frecuentes</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-solarLight p-6 rounded-xl border border-gray-200">
+                    <h4 class="font-bold text-solarDark text-lg mb-2"><i class="fa-solid fa-circle-question text-solarSun mr-2"></i> ¿Cómo funciona la prueba gratuita de 7 días?</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Creas tu cuenta, accedes al software y disfrutas del 100% de las funciones técnicas. Al séptimo día, si deseas continuar, Hotmart te enviará el cobro según el plan elegido. Si no, cancelas con un clic.</p>
+                </div>
+                <div class="bg-solarLight p-6 rounded-xl border border-gray-200">
+                    <h4 class="font-bold text-solarDark text-lg mb-2"><i class="fa-solid fa-circle-question text-solarSun mr-2"></i> ¿Qué es una PWA y por qué es mejor?</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Una PWA (Progressive Web App) funciona directo en el navegador de tu celular (Chrome/Safari) pero tiene la fluidez de una app móvil. Tus ingenieros no necesitan descargar programas pesados. ¡Funciona al instante!</p>
+                </div>
+                <div class="bg-solarLight p-6 rounded-xl border border-gray-200">
+                    <h4 class="font-bold text-solarDark text-lg mb-2"><i class="fa-solid fa-circle-question text-solarSun mr-2"></i> ¿SolarMind Designer Pro requiere instalación en PC?</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">¡Para nada! Es un software SaaS 100% alojado en la nube. Accedes con usuario y contraseña desde cualquier computadora o celular con internet. Tus datos y proyectos están respaldados automáticamente.</p>
+                </div>
+                <div class="bg-solarLight p-6 rounded-xl border border-gray-200">
+                    <h4 class="font-bold text-solarDark text-lg mb-2"><i class="fa-solid fa-circle-question text-solarSun mr-2"></i> ¿Qué pasa si deseo cancelar mi suscripción?</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Puedes cancelar en cualquier momento antes de tu fecha de corte mensual/anual directamente desde tu panel de Hotmart. No hay contratos forzosos ni penalizaciones ocultas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0b1120] text-gray-400 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <img src="image_e7e8aa.png" alt="Logo SolarMind" class="h-8 w-auto grayscale opacity-70">
+                <span class="font-bold text-white">SolarMind Designer Pro</span>
+            </div>
+            <p class="text-sm text-center md:text-left">&copy; 2026 SolarMind Digital Hub. Todos los derechos reservados.</p>
+            <div class="flex gap-6 text-2xl">
+                <a href="https://wa.link/yy7cow" target="_blank" class="hover:text-solarEco transition" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-pink-500 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
